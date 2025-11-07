@@ -7,6 +7,10 @@ on:
       - gh-pages
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pages: write
+
 jobs:
   build-and-deploy:
     if: github.ref != 'refs/heads/gh-pages'
